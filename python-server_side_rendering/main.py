@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 from task_00_intro import generate_invitations
 
 # Read the template from a file
