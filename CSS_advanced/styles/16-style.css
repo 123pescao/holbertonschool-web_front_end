@@ -4,7 +4,7 @@ html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     scroll-behavior: smooth;
-    font-size: 62.5%; /* This makes 1rem = 10px */
+    font-size: 62.5%;
 }
 
 /* Universal box-sizing */
@@ -219,8 +219,9 @@ template {
 
 /* Container styling */
 .container {
-    width: 960px; /* Fixed width */
-    margin: 0 auto; /* Center the container */
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 :root {
