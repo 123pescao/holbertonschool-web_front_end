@@ -1,0 +1,44 @@
+/* Extend the custom properties with font sizes */
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+    --font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family-title: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+    /* Define custom font-size properties */
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+}
+
+/* Set base font size for html to scale all rem values correctly */
+html {
+    font-size: 62.5%; /* This makes 1rem = 10px */
+}
+
+/* Apply the medium font size to the body */
+body {
+    font-family: var(--font-family-base);
+    color: var(--text-color);
+    font-size: var(--font-size-medium); /* 16px if 1rem = 10px */
+}
+
+/* Heading styles remain unchanged */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-title);
+}
+
+/* Visually hidden and color styles remain unchanged */
+.visually-hidden {
+    display: none;
+}
+
+.card-category, .section-tagline {
+    color: var(--color-primary);
+}
