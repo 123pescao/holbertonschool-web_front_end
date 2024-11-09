@@ -1,0 +1,70 @@
+/* Extend the custom properties for section taglines */
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+    --font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family-title: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --line-height-small: 1.2;
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
+    --section-header-align: center;
+    --section-tagline-transform: uppercase; /* New variable for text transformation */
+}
+
+/* Apply base font size, weight, and line height for html and body */
+html {
+    font-size: 62.5%; /* This makes 1rem = 10px */
+}
+
+body {
+    font-family: var(--font-family-base);
+    color: var(--text-color);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-base);
+}
+
+/* Heading font styles including weight */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-title);
+    font-weight: var(--font-weight-bold);
+}
+
+/* Remove text decoration from all anchor tags */
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* Apply center alignment to section headers */
+.section-header {
+    text-align: var(--section-header-align);
+}
+
+/* Styling for section taglines with new font and text properties */
+.section-tagline {
+    font-family: var(--font-family-title);
+    color: var(--color-primary);
+    text-transform: var(--section-tagline-transform); /* Apply uppercase */
+    font-weight: var(--font-weight-bold); /* Make text bold */
+}
+
+/* Visually hidden and color styles remain unchanged */
+.visually-hidden {
+    display: none;
+}
+
+.card-category {
+    color: var(--color-primary);
+}
