@@ -1,0 +1,24 @@
+/* Define custom properties at the root level */
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+}
+
+/* Use custom properties to set text color for the body and anchor elements */
+body, a {
+    color: var(--text-color);
+}
+
+/* Hide elements with the class 'visually-hidden' */
+.visually-hidden {
+    display: none;
+}
+
+/* Use the primary color for elements with 'card-category' and 'section-tagline' */
+.card-category, .section-tagline {
+    color: var(--color-primary);
+}
