@@ -9,7 +9,7 @@ html {
 
 /* Universal box-sizing */
 *, *::before, *::after {
-    box-sizing: border-box;
+    box-sizing: border-box; /* Include padding and border in all elements' total width and height */
 }
 
 /* Sections */
@@ -51,7 +51,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Add underline on hover */
 }
 
 a:visited {
@@ -200,7 +200,7 @@ template {
 
 .section-header {
     text-align: var(--section-header-align);
-    padding: var(--section-header-padding);
+    padding: var(--section-header-padding); /* Custom property for padding */
 }
 
 .section-title {
@@ -216,16 +216,16 @@ template {
     font-family: var(--font-family-title);
     text-transform: var(--section-tagline-transform);
     font-weight: var(--font-weight-bold);
-    margin-bottom: var(--section-tagline-margin);
+    margin-bottom: var(--section-tagline-margin); /* Ensure consistency in spacing */
 }
 
 /* Container styling */
 .container {
-    width: 960px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 960px; /* Fixed width */
+    margin: 0 auto; /* Center the container */
 }
 
+/* Padding custom properties defined in root for easy maintenance and consistency */
 :root {
     --color-primary: #d73953;
     --color-black: #090909;
@@ -248,7 +248,7 @@ template {
     --section-header-align: center;
     --section-header-padding: 0 0 3rem;
     --section-tagline-transform: uppercase;
-    --section-tagline-margin: 1rem;
+    --section-tagline-margin: 1rem; /* New property for bottom margin of taglines */
     --section-title-margin: 0;
     --section-title-color: var(--color-black);
 }
