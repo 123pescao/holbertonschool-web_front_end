@@ -414,6 +414,20 @@ template {
 
 }
 
+.button{
+    display: var(--button-display);
+    padding: var(--button-padding);
+    border: var(--button-border);
+    font_size: var(--button-font_size);
+    color: var(--button_color);
+    text_decoration: var(--button_text_decoration);
+}
+.button:hover{
+    color: var(--button_hover_color);
+    text_decoration: var(--button_hover_text_decoration);
+    background_color: var(--button_hover_background);
+}
+
 .card-services .card-title {
     margin: 0;
 }
@@ -427,20 +441,6 @@ template {
     color: var(--color-white);
     background_color: var(--color-primary);
     text_decoration: none;
-}
-
-.button{
-    display: var(--button-display);
-    padding: var(--button-padding);
-    border: var(--button-border);
-    font_size: var(--button-font_size);
-    color: var(--button_color);
-    text_decoration: var(--button_text_decoration);
-}
-.button:hover{
-    color: var(--button_hover_color);
-    text_decoration: var(--button_hover_text_decoration);
-    background_color: var(--button_hover_background);
 }
 
 .card-testimonial{
