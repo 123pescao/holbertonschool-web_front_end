@@ -253,7 +253,7 @@ template {
 
 [class^="col-"] {
     float: left;
-    padding: calc(var(--root-font-size) / 2);
+    padding: 0.5rem;
 }
 
 .col-1-3 {
